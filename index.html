@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="barra-superior">
+            <h1>Mi Diario ✍️</h1>
+            <div class="controles">
+                <div id="fecha-actual" class="fecha"></div>
+                <button id="btn-tema" class="btn-tema">
+                    <span class="icono">🌙</span>
+                    <span class="texto">Modo Noche</span>
+                </button>
+            </div>
+        </div>
+        <div id="formulario-entrada" class="oculto">
+            <input type="text" id="input-titulo" placeholder="Título de la entrada">
+            <div class="fecha-input">
+                <input type="date" id="input-fecha">
+                <span>📅</span>
+            </div>
+            <textarea id="input-contenido" placeholder="¿Qué quieres escribir hoy?"></textarea>
+            <div class="acciones">
+                <button id="btn-cancelar" class="btn-secundario">Cancelar</button>
+                <button id="btn-guardar" class="btn-primario">Guardar</button>
+            </div>
+        </div>
+
+        <div id="lista-entradas"></div>
+
+        <button id="btn-nueva-entrada" class="btn-flotante">+</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
